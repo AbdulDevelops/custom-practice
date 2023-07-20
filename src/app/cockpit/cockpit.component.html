@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>Custom Event Configuration</h1>
+    <br>
+
+    <label> Server Name</label>
+    <input type="text" class="form-control" [(ngModel)]="newServerName">
+    <hr>
+    <label> Server Content</label>
+    <input type="text" class="form-control" [(ngModel)]="newServerContent">
+
+    <button class="btn btn-primary" (click)="serverAdded()">Add Server</button>
+
+    <button class="btn btn-success" (click)="blueprintAdded()">Add Bluprint</button>
+  </div>
+</div>
