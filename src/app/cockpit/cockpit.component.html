@@ -4,13 +4,20 @@
     <br>
 
     <label> Server Name</label>
-    <input type="text" class="form-control" [(ngModel)]="newServerName">
+    <input type="text"
+    class="form-control"
+    #inputRef>
+
     <hr>
     <label> Server Content</label>
-    <input type="text" class="form-control" [(ngModel)]="newServerContent">
+   <!-- using local refrences instead of two-way binding -->
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+    <input type="text"
+    class="form-control"
+    #serverContentInput>
 
-    <button class="btn btn-primary" (click)="serverAdded()">Add Server</button>
+    <button class="btn btn-primary" (click)="serverAdded(inputRef)">Add Server</button>
 
-    <button class="btn btn-success" (click)="blueprintAdded()">Add Bluprint</button>
+    <button class="btn btn-success" (click)="blueprintAdded(inputRef)">Add Bluprint</button>
   </div>
 </div>
