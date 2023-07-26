@@ -1,4 +1,9 @@
-import { Component, EventEmitter, Input, Output, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component,
+  EventEmitter,
+  Input, Output,
+   OnInit, ViewChild,
+   ElementRef,
+  OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-cockpit',
@@ -37,4 +42,5 @@ export class CockpitComponent implements OnInit{
   ngOnInit(): void {
 
   }
+
 }

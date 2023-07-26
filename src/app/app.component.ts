@@ -25,4 +25,12 @@ export class AppComponent {
     })
 
   }
+  ChangeFirst(){
+    this.serverElement[0].name = 'change triggered'
+  }
+
+  destroyFirst(){
+    this.serverElement.splice(0,1);
+
+  }
 }

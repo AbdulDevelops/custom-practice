@@ -36,10 +36,11 @@ label {
 }
 
 /* Optional: Adjust the primary button's color */
-.btn-primary {
+.btn-primary:hover {
   background-color: #007bff;
   color: #fff;
   border: none;
+
 }
 
 /* Optional: Add some space between the buttons */

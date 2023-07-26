@@ -1,9 +1,8 @@
 <div class="panel panel-default">
-  <div class="panel-heading">{{srvElement.name}}</div>
+  <!-- <div class="panel-heading">{{elementServ.name}}</div> -->
+  <div class="panel-heading">{{name}}</div>
   <div class="pane-body">
-    <p>
-      <strong *ngIf="srvElement.type==='server'" style="color:red">{{srvElement.content}}</strong>
-      <em *ngIf="srvElement.type==='blueprint'">{{srvElement.content}}</em>
-    </p>
+   <!--  using the main code in app-component and here mentioning the ng-content -->
+ <ng-content></ng-content>
   </div>
 </div>
